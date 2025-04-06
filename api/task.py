@@ -13,4 +13,7 @@ class TaskAPIClient(BaseAPIClient):
 
     def get_tasks_by_name(self, name):
         return self.get(f"tasks?name={name}")
+    
+    def get_tags(self):
+        return self.get("tags")
 
